@@ -9,8 +9,16 @@ function ReviewList() {
     <div>
       <h2>REVIEW</h2>
       <div>
-        {reviews.id}
-        {reviews.content}
+        {reviews.map((review) => {
+          return (
+            <>
+              <div>
+                {review.id}
+                {review.content}
+              </div>
+            </>
+          );
+        })}
       </div>
     </div>
   );
